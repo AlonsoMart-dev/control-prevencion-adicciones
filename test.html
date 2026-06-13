@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test de Detección Temprana</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="img/logo.png" alt="Logo" class="logo">
+
+    <h1>CONTROL Y PREVENCIÓN DE ADICCIONES</h1>
+
+    <p>Test de Detección Temprana</p>
+
+</header>
+
+<section class="contenedor-test">
+
+    <h1 class="titulo-test">
+
+        Test de Detección Temprana
+
+    </h1>
+
+    <div class="intro-test">
+
+        <p>
+            Este cuestionario tiene fines exclusivamente informativos y de orientación.
+            No sustituye una evaluación profesional ni un diagnóstico médico.
+            Su propósito es ayudar a identificar posibles factores de riesgo relacionados
+            con conductas adictivas y promover la búsqueda de ayuda cuando sea necesario.
+        </p>
+
+    </div>
+
+    <form id="formularioTest">
+
+        <div class="pregunta">
+
+            <h3>1. ¿Consumes alcohol para sentirte mejor emocionalmente?</h3>
+
+            <select name="p1">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>2. ¿Has intentado dejar algún hábito y no lo has logrado?</h3>
+
+            <select name="p2">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>3. ¿Pasas más tiempo del planeado en redes sociales o videojuegos?</h3>
+
+            <select name="p3">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>4. ¿Has ocultado algún comportamiento por miedo a ser juzgado?</h3>
+
+            <select name="p4">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>5. ¿Tus hábitos han afectado tu desempeño escolar o laboral?</h3>
+
+            <select name="p5">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>6. ¿Has descuidado responsabilidades por alguna actividad?</h3>
+
+            <select name="p6">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>7. ¿Sientes ansiedad cuando no puedes realizar esa actividad?</h3>
+
+            <select name="p7">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>8. ¿Tu familia o amigos han expresado preocupación por tus hábitos?</h3>
+
+            <select name="p8">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>9. ¿Has gastado dinero impulsivamente en apuestas, videojuegos o compras?</h3>
+
+            <select name="p9">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="pregunta">
+
+            <h3>10. ¿Consideras difícil controlar ciertos comportamientos o hábitos?</h3>
+
+            <select name="p10">
+                <option value="0">Nunca</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Algunas veces</option>
+                <option value="3">Frecuentemente</option>
+                <option value="4">Siempre</option>
+            </select>
+
+        </div>
+
+        <div class="contenedor-boton">
+
+            <button type="button"
+                    class="btn-evaluar"
+                    onclick="evaluarTest()">
+
+                Evaluar Resultado
+
+            </button>
+
+        </div>
+
+    </form>
+
+    <div id="resultado"></div>
+
+    <div class="regresar">
+
+        <a href="index.html" class="btn-regresar">
+
+            ⬅ Regresar al Inicio
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        &copy; 2026 Alonso Martínez | Proyecto "Control y Prevención de Adicciones"
+    </p>
+
+    <p>
+        Todos los derechos reservados.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
